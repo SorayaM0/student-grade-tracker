@@ -1,38 +1,48 @@
 # Student Grade Tracker
 
-A simple Java console application for managing students and their grades.  
-The project demonstrates core Java programming concepts including object-oriented programming, collections, user input, and basic data processing.
+A simple JavaFX application for managing students and tracking their grades.
+
+The project started as a console-based Java application and was later upgraded with a graphical user interface using JavaFX.
 
 ## Features
 
-- Add new students
-- Add grades for existing students
-- View all students and their averages
-- Search for a student by name
+- Add students with an initial grade
+- Add additional grades to existing students
+- Automatically calculate each student's average
 - Calculate the overall class average
 - Display the top-performing student
-- Validate grade input between 0 and 100
+- Select students directly from the table
+- Validate grades between 0 and 100
+- Simple and clean JavaFX interface
 
 ## Technologies
 
 - Java
+- JavaFX
+- Maven
+- CSS
 - Object-Oriented Programming (OOP)
-- ArrayList
-- Scanner
 
 ## Project Structure
 
 ```text
 student-grade-tracker/
 ├── src/
-│   ├── Main.java
-│   ├── Student.java
-│   └── GradeManager.java
+│   └── main/
+│       ├── java/
+│       │   ├── Main.java
+│       │   ├── Student.java
+│       │   └── GradeManager.java
+│       └── resources/
+│           └── style.css
+├── pom.xml
 ├── .gitignore
 └── README.md
 ```
 
 ## How to Run
+
+Make sure Java and Maven are installed.
 
 Clone the repository:
 
@@ -40,42 +50,35 @@ Clone the repository:
 git clone https://github.com/SorayaM0/student-grade-tracker.git
 ```
 
-Navigate to the project:
+Open the project directory:
 
 ```bash
 cd student-grade-tracker
 ```
 
-Compile the application:
-
-```bash
-mkdir -p out
-javac -d out src/*.java
-```
-
 Run the application:
 
 ```bash
-java -cp out Main
+mvn clean javafx:run
 ```
 
-## Example Menu
+## How It Works
 
-```text
-1. Add Student
-2. Add Grade
-3. View Students
-4. Search Student
-5. Class Average
-6. Top Student
-7. Exit
-```
+Enter a student's name and their first grade, then click **Add Student**.
+
+To add another grade, select the student from the table, enter the new grade, and click **Add Grade**.
+
+The application automatically updates the student's average, class average, and top student.
 
 ## Future Improvements
 
-- Add a JavaFX graphical user interface
+Possible future additions include:
+
 - Save student data between sessions
-- Add additional grade statistics
+- Remove or edit students
+- Display individual grade history
+- Export grade reports
+- Add additional statistics
 
 ## Author
 
