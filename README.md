@@ -39,7 +39,9 @@ student-grade-tracker/
 ├── .gitignore
 └── README.md
 ```
+## Application Preview
 
+![Student Grade Tracker](student-grade-tracker.png)
 ## How to Run
 
 Make sure Java and Maven are installed.
