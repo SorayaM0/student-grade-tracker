@@ -41,18 +41,22 @@ public class GradeManager {
     }
 
     public Student getTopStudent() {
-        if (students.isEmpty()) {
-            return null;
-        }
 
-        Student topStudent = students.get(0);
-
+        Student topStudent = null;
+    
         for (Student student : students) {
-            if (student.getAverage() > topStudent.getAverage()) {
+    
+            if (student.getGrades().isEmpty()) {
+                continue;
+            }
+    
+            if (topStudent == null ||
+                student.getAverage() > topStudent.getAverage()) {
+    
                 topStudent = student;
             }
         }
-
+    
         return topStudent;
     }
 }
