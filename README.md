@@ -41,7 +41,9 @@ student-grade-tracker/
 ```
 ## Application Preview
 
-![Student Grade Tracker](student-grade-tracker.png)
+<p align="center">
+  <img src="student-grade-tracker.png" alt="Student Grade Tracker" width="600">
+</p>
 ## How to Run
 
 Make sure Java and Maven are installed.
